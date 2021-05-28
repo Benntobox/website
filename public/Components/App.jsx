@@ -1,23 +1,22 @@
 import React from 'react';
-import { Title, SecondTitle } from './Styled.js'
+import { Header } from './Header.jsx';
+import { Sidebar } from './Sidebar.jsx'
 
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { tab: 0 }
+    this.state = { tab: 'HOME' }
   }
 
-  setPage(num) {
-    this.setState({ tab: num });
+  setPage(page) {
+    this.setState({ tab: page });
   }
 
   render() {
     return (
-    <div>
-      {this.state.tab === 0 ?
-      <Title>TESTING MORE</Title> :
-      <SecondTitle>AND EVEN MORE</SecondTitle>
-      } 
+    <div className='main'>
+      <Header tab={this.state.tab} />
+      <Sidebar tab={this.state.tab} set={this.setPage.bind(this)} />
     </div>
     )
   }
