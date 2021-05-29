@@ -1,6 +1,7 @@
 import React from 'react';
 import { Header } from './Header.jsx';
-import { Sidebar } from './Sidebar.jsx'
+import { Main } from './Main.jsx';
+import { MainContainer, SideLine } from './styles.js';
 
 class App extends React.Component {
   constructor(props) {
@@ -14,10 +15,11 @@ class App extends React.Component {
 
   render() {
     return (
-    <div className='main'>
-      <Header tab={this.state.tab} />
-      <Sidebar tab={this.state.tab} set={this.setPage.bind(this)} />
-    </div>
+    <MainContainer className='main container'>
+      <SideLine />
+      <Header tab={this.state.tab} set={this.setPage.bind(this)}/>
+      <Main tab={this.state.tab} />
+    </MainContainer>
     )
   }
 }

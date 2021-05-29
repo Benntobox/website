@@ -1,11 +1,23 @@
 import React from 'react';
-import { HeaderTitle, SectionTitle } from './styles.js';
+import { HeaderTitle, Tab, TabActive, TabContainer } from './styles.js';
 
 export const Header = (props) => {
   return (
   <div className='header'>
-    <HeaderTitle>Main Title</HeaderTitle>
-    <SectionTitle>{props.tab}</SectionTitle>
+    <HeaderTitle>Benny's Webpage</HeaderTitle>
+    <TabContainer className='tab container'>
+      {props.tab === 'HOME' ? 
+      <TabActive>HOME</TabActive> : 
+      <Tab onClick={() => props.set('HOME')}>HOME</Tab>}
+
+      {props.tab === 'ABOUT' ? 
+      <TabActive>ABOUT</TabActive> : 
+      <Tab onClick={() => props.set('ABOUT')}>ABOUT</Tab>}
+      
+      {props.tab === 'PROJECTS' ? 
+      <TabActive>PROJECTS</TabActive> : 
+      <Tab onClick={() => props.set('PROJECTS')}>PROJECTS</Tab>}
+    </TabContainer>
   </div>
   )
 }
