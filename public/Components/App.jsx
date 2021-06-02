@@ -1,6 +1,7 @@
 import React from 'react';
 import { Header } from './Header.jsx';
 import { Main } from './Main.jsx';
+import { Footer } from './Footer.jsx';
 import { MainContainer, SideLine } from './styles.js';
 
 class App extends React.Component {
@@ -19,6 +20,7 @@ class App extends React.Component {
       <SideLine />
       <Header tab={this.state.tab} set={this.setPage.bind(this)}/>
       <Main tab={this.state.tab} />
+      <Footer />
     </MainContainer>
     )
   }

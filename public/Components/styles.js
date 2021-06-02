@@ -59,3 +59,14 @@ export const SideLine = styled.div`
   left: 0px;
   top: 0px;
 `;
+
+export const FooterContainer = styled.div`
+  display: flex;
+  margin: 0px 10px;
+`;
+
+export const FooterText = styled.div`
+  font-size: 16px;
+  color: lightblue;
+  margin: 5px;
+`;
