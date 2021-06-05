@@ -20,7 +20,7 @@ class App extends React.Component {
       <SideLine />
       <Header tab={this.state.tab} set={this.setPage.bind(this)}/>
       <Main tab={this.state.tab} />
-      <Footer />
+      <Footer tab={this.state.tab} set={this.setPage.bind(this)}/>
     </MainContainer>
     )
   }
