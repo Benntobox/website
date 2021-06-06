@@ -1,5 +1,5 @@
 import React from 'react';
-import { MainContent } from './styles.js';
+import { DisplayContent } from './styles.js';
 
 let content1 = `
 I'm baby godard tote bag street art cred succulents keytar narwhal, irony palo santo pop-up. 
@@ -7,12 +7,6 @@ Twee butcher narwhal, williamsburg +1 four loko paleo. Air plant butcher cliche 
 Chia vexillologist copper mug poke, knausgaard polaroid humblebrag before they sold out. 
 Pabst aesthetic fixie squid farm-to-table venmo XOXO. Ethical schlitz lyft, tattooed actually pabst. 
 Cornhole post-ironic shaman paleo trust fund kale chips.
-
-
-
-
-
-
 
 Chartreuse authentic fixie, bicycle rights lumbersexual succulents gochujang everyday carry tbh af. 
 Green juice distillery. Aesthetic truffaut squid taxidermy, glossier cloud bread try-hard pitchfork. 
@@ -31,6 +25,6 @@ I'm baby listicle cronut hexagon, pok pok humblebrag cray hashtag blog. Small ba
 Stumptown four loko fingerstache taxidermy narwhal woke typewriter butcher vegan dreamcatcher kickstarter mixtape truffaut lumbersexual. Chicharrones skateboard heirloom, tacos hot chicken fam try-hard occupy. Taxidermy chartreuse biodiesel typewriter beard pug intelligentsia cardigan food truck yr. Vegan PBR&B hoodie, four dollar toast sriracha paleo polaroid letterpress try-hard tote bag VHS disrupt leggings.
 `
 
-export const Main = (props) => {
-  return (<MainContent>{props.tab === 'HOME' ? content1 : content2}</MainContent>)
+export const Display = (props) => {
+  return (<DisplayContent>{props.tab === 'HOME' ? content1 : content2}</DisplayContent>)
 }

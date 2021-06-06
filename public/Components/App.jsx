@@ -1,6 +1,6 @@
 import React from 'react';
 import { Header } from './Header.jsx';
-import { Main } from './Main.jsx';
+import { Display } from './Display.jsx';
 import { Footer } from './Footer.jsx';
 import { MainContainer, SideLine } from './styles.js';
 
@@ -19,7 +19,7 @@ class App extends React.Component {
     <MainContainer className='main container'>
       <SideLine />
       <Header tab={this.state.tab} set={this.setPage.bind(this)}/>
-      <Main tab={this.state.tab} />
+      <Display tab={this.state.tab} />
       <Footer tab={this.state.tab} set={this.setPage.bind(this)}/>
     </MainContainer>
     )

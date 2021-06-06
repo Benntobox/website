@@ -1,10 +1,17 @@
 import styled from 'styled-components';
 
+// HEADER
 export const HeaderTitle = styled.h1`
   font-size: 1.6em;
   text-align: left;
   color: rgb(165, 1, 19);
   margin: 10px 19px;
+`;
+
+export const TabContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  padding: 0px 8px;
 `;
 
 export const Tab = styled.h3`
@@ -26,6 +33,7 @@ export const TabActive = styled.h3`
   padding: 0px 6px;
 `;
 
+// MAIN
 export const MainContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -33,13 +41,8 @@ export const MainContainer = styled.div`
   padding: 5px 20px;
 `;
 
-export const TabContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  padding: 0px 8px;
-`;
-
-export const MainContent = styled.div`
+// CONTENT
+export const DisplayContent = styled.div`
   font-size: 1em;
   color: white;
   margin: -1px 10px 10px 10px;
@@ -51,6 +54,7 @@ export const MainContent = styled.div`
   flex-direction: row;
 `;
 
+// SIDEBAR
 export const SideLine = styled.div`
   background-image: linear-gradient(to bottom, rgba(227, 0, 4, 1), rgba(227, 0, 4, 0) );
   height: 1000px;
@@ -60,6 +64,7 @@ export const SideLine = styled.div`
   top: 0px;
 `;
 
+// FOOTER
 export const FooterContainer = styled.div`
   display: flex;
   margin: 0px 10px;
@@ -68,5 +73,11 @@ export const FooterContainer = styled.div`
 export const FooterText = styled.div`
   font-size: 16px;
   color: lightblue;
+  margin: 5px;
+`;
+
+export const FooterTextActive = styled.div`
+  font-size: 16px;
+  color: lightgreen;
   margin: 5px;
 `;
